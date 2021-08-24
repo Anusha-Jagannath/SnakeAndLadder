@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class SnakeLadder {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Snake and Ladder Problem");
@@ -31,6 +32,8 @@ public class SnakeLadder{
 =======
 =======
 >>>>>>> UC4-Repeat
+=======
+>>>>>>> UC5-No-Move
 import java.util.Random;
 
 public class SnakeLadder {
@@ -46,6 +49,7 @@ public class SnakeLadder {
 		System.out.println("Single player is at postion "+position);
 		
 		Random random = new Random();
+<<<<<<< HEAD
 		int dieNum = random.nextInt(7-1)+1;
 		System.out.println("Dice number : "+dieNum);
 		
@@ -59,13 +63,41 @@ public class SnakeLadder {
 		}else if(choice == SNAKE) {
 			System.out.println("Player declined by "+dieNum);
 			position-=dieNum;
+=======
+		
+		while(position != 100) {
+			int dieNum = random.nextInt(7-1)+1;
+			System.out.println("Dice number : "+dieNum);
+		
+			int choice = random.nextInt(4-1)+1;
+		
+			if(choice == NO_PLAY){
+				System.out.println("No Play");
+			}else if(choice == LADDER) {
+				System.out.println("Player inclined by "+dieNum);
+				position+=dieNum;
+			}else if(choice == SNAKE) {
+				System.out.println("Player declined by "+dieNum);
+				position-=dieNum;
+			}
+			if(position<0)
+				position = 0;
+			
+			if(position>100)
+				position-= dieNum;
+		
+>>>>>>> UC5-No-Move
 		}
 			
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 >>>>>>> UC3-Option-Check
 =======
 }
 >>>>>>> UC4-Repeat
+=======
+}
+>>>>>>> UC5-No-Move
