@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class SnakeLadder {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Snake and Ladder Problem");
@@ -34,6 +35,8 @@ public class SnakeLadder{
 >>>>>>> UC4-Repeat
 =======
 >>>>>>> UC5-No-Move
+=======
+>>>>>>> UC6-Position-Count
 import java.util.Random;
 
 public class SnakeLadder {
@@ -46,6 +49,7 @@ public class SnakeLadder {
 		
 
 		int position = 0;
+<<<<<<< HEAD
 		System.out.println("Single player is at postion "+position);
 		
 		Random random = new Random();
@@ -68,6 +72,16 @@ public class SnakeLadder {
 		while(position != 100) {
 			int dieNum = random.nextInt(7-1)+1;
 			System.out.println("Dice number : "+dieNum);
+=======
+		int count = 0;
+		System.out.println("Single player is at postion "+position);
+		
+		Random random = new Random();
+		
+		while(position != 100) {
+				int dieNum = random.nextInt(7-1)+1;
+				System.out.println("Dice number : "+dieNum);
+>>>>>>> UC6-Position-Count
 		
 			int choice = random.nextInt(4-1)+1;
 		
@@ -85,6 +99,7 @@ public class SnakeLadder {
 			
 			if(position>100)
 				position-= dieNum;
+<<<<<<< HEAD
 		
 >>>>>>> UC5-No-Move
 		}
@@ -101,3 +116,14 @@ public class SnakeLadder {
 =======
 }
 >>>>>>> UC5-No-Move
+=======
+			
+			count++;
+			System.out.println("Position after every die roll: "+position);
+		}
+		System.out.println("Final Player position is : "+position);
+		System.out.println("No. of time the dice used : "+count);
+	}
+
+}
+>>>>>>> UC6-Position-Count
