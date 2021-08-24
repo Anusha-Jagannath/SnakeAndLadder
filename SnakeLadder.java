@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class SnakeLadder {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Snake and Ladder Problem");
@@ -28,6 +29,8 @@ public class SnakeLadder{
 }
 >>>>>>> UC1-Single-Player
 =======
+=======
+>>>>>>> UC4-Repeat
 import java.util.Random;
 
 public class SnakeLadder {
@@ -60,5 +63,9 @@ public class SnakeLadder {
 			
 	}
 
+<<<<<<< HEAD
 }
 >>>>>>> UC3-Option-Check
+=======
+}
+>>>>>>> UC4-Repeat
